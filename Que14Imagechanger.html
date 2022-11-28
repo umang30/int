@@ -1,0 +1,33 @@
+<!-- Write JS code that changes the image when change image button is clicked. (Done) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../image_chager/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <img id="img" src="img/img1.jpg"/ height="200px">
+    
+   </div>
+   <button onclick="change()">Change</button>
+
+   <script>
+    function change()
+    {
+        var img_name = document.getElementById('img');
+        if(img_name.src.match('./img/img1.jpg'))
+        {
+            img_name.src = ('./img/img2.jpg');
+        }
+        else{
+            img_name.src = ('./img/img1.jpg');
+        }
+    }
+   </script>
+</body>
+</html>

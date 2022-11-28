@@ -1,0 +1,53 @@
+<!-- //create chat client server application using socket.io method -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat application </title>
+</head>
+<body>
+    
+    <h1> chat application using socket  </h1>
+
+    <ul id="message"> </ul>
+    <form  id="form">
+
+        <input type="text" id="input">
+        <button> SEND </button>
+
+    </form>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+
+ var socket = io();
+ var msg = document.getElementById("message");
+ var input = document.getElementById("input");
+ var form = document.getElementById("form");
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(input.value)
+    {
+        socket.emit('chat', input.value)
+        input.value = " ";
+    }
+})
+
+socket.on('final' , function(msg){
+    var item = document.createElement('li')
+    item.textContent =  msg
+    message.appendChild(item);
+    window.scrollTo(0,document.body.scrollHeight);
+})
+
+</script>
+
+</body>
+</html>

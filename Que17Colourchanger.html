@@ -1,0 +1,53 @@
+<!-- Create a JS code to develop a drop down menu and to select a colour of background page and msg should appear "you have selected this [color]" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOUR SELECTOR</title>
+</head>
+<body>
+    
+<h1>COLOUR SELECTOR</h1>
+
+<label for="colour-names"><b> Choose a colour: </b></label>
+<select name="colour-names" id="colour-names" class="colournames" onclick="change()">
+  <option value="white"  id="None">None</option>
+  <option value="green"  id="green">green</option>
+  <option value="blue"  id="blue">blue</option>
+  <option value="yellow"  id="yellow">yellow</option>
+  <option value="red"  id="red">red</option>
+</select>
+<br>
+<br>
+<br>
+<h2 id="info"></h2>
+</body>
+
+<script>
+
+
+function change(){
+    
+    var color = document.getElementById("colour-names").value;
+
+    if(color == "white") {
+        document.body.style.backgroundColor = color;
+        var i = document.getElementById("info");
+        i.innerHTML="You selected None";
+    }
+    else {
+        document.body.style.backgroundColor = color;
+        var i = document.getElementById("info");
+        i.innerHTML="You selected "+ color;
+    }
+}
+
+
+</script>
+
+
+
+</html>

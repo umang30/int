@@ -1,0 +1,53 @@
+<!-- 16) create a webpage that contain the paragraph , when user hover mouse over paragraph the font change.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Changer</title>
+</head>
+<body>
+    <h1> Font Changer</h1>
+    <div class="para">
+    <P id="paragraph" onmouseleave="paraback()" onmouseenter="parachange()">
+        India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world
+    </P>
+</div>
+</body>
+
+<script>
+
+const par  = document.getElementById('paragraph');
+
+function parachange() {
+    par.style.cursor = 'pointer';
+    par.style.fontFamily = 'monospace';
+    par.style.color = 'blue';
+    par.innerHTML=" hellow this para has been changed."
+}
+
+function paraback() {
+    par.style.fontFamily = "emoji"
+    par.style.color = 'black';
+    par.innerHTML=" India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world"
+}
+
+// par.addEventListener('mousemove',function handlemmouseover()
+// {
+//     par.style.cursor = 'pointer';
+//     par.style.fontFamily = 'monospace';
+//     par.style.color = 'blue';
+// });
+
+// par.addEventListener('mouseout',function handlemouseout()
+// {
+//     par.style.fontFamily = "emoji"
+//     par.style.color = 'black';
+// });
+
+</script>
+
+</html>

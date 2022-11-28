@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial finder</title>
+</head>
+<body>
+    
+
+<h1> factorial finder</h1>
+
+
+Enter a number : <input type="number" id="fnum" required> <font color="red"> <b><span id="error" ></span></b> </font>
+<br> <br>
+
+
+<button onclick="factorial()"> Calculate </button>
+<button  onclick="reset()"> Reset </button>
+
+</body>
+
+<script>
+
+function factorial() {
+
+    var fnum = document.getElementById("fnum").value;
+    f=1;
+    
+    if(fnum < 0){
+        document.getElementById("error").innerHTML = " Please enter a positive number";
+    }
+
+    else {
+    for(i=1; i<=fnum; i++)
+    f*=i
+
+    document.getElementById("fnum").value = f ;
+    document.getElementById("error").innerHTML = " ";
+}
+
+
+function reset() {
+    
+    document.getElementById("fnum").value = " " ;
+}
+
+}
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+1) Create an application in node js in which the client sents a message and server sent "welcome to node js tutorial" messageback using #SOCKET
+
+2) Create a node js application to write a string " this is node js class" into buffer and print first five and last 3 char of the string on the console using module. (Done)
+
+3) WAP to show the implementation process and middleware in node js. (Done)
+
+4) Create a node js application to implement a chat application using #SOCKET io which sents the message and recieve the message sent from other end. (Done)
+
+5) create a node js application to open a file node.txt and prints a message "file empty" if the file is empty, otherwise append the content of files to new file new.txt (Done)
+
+6) create a node js application to parse a JSON file and print content of the file on the console. - (Done)
+
+7) create a node js application to demonstrate the use of Zlib and stream module.(Done)
+
+8)develop a node js application to create a collection employee in #mongodb and print all the records on the console after inserting the records in employee. (Done)
+
+9) create a node js application which demonstrate the use of get and post method using express.(Done)
+
+10) Create a node js application that has following link :- home contact and support , when user clicks on support link - chat box should be opened and a message "hi, how can i help you" from server to be displayed to the user. 
+
+Aim of module :- http, os, url, fs.
+
+
+
+
+11) Create a JS code to build a calculator. (Done).
+
+12) to create a five fields in the form and need to validate all the fields (Done).
+
+13) basic converter meter to cm , create buttons for the conversion and take number form user , display the converted value in popup box (Done).
+
+14)Write JS code that changes the image when change image button is clicked. (Done)
+
+15) JS code to create a web page  which prompts user to enter first name and last name as two strings and on the subbmiting alert will be generated that will show the message as hellow in " name of the user" (Done)
+
+16) create a webpage that contain the paragraph , when user hover mouse over paragraph the font change.(Done)
+
+17) Create a JS code to develop a drop down menu and to select a colour of background page and msg should appear "you have selected this [color]"
+
+18) implement an express application to perform the following operations 
+    a) accept two numbers from the input text fields of a user web page and perform the basic operations (+,-,*,/) on those 2 numbers inside a middleware function of server node.js application.
+    b) display the output values in the user web page as a response to the click event form 
+
+19) create an express application for the following scenario 
+a) create a text file and add student info( regno. , name, grade) in the server side
+b) accept a file name from the input text field of a user web page and transfer the request to the download() function from the server as a responser to button click event from the user.
+
+20) 4 Create a web server application with http module for the following scenario
+a) Create a server node.js application using http module to find the factorial of a number
+b) Accept a number from the input text field of the client page and provide the output
+sponse with the click event on a button.
+
+
+21)  CURD operation with file FileSystem. 
+

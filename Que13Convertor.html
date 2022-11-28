@@ -1,0 +1,76 @@
+<!-- basic converter meter to cm , create buttons for the conversion and take number form user , display the converted value in popup box (Done). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertor</title>
+  </head>
+
+  <style>
+    body {
+      padding: 10px 50px;
+      background: aliceblue;
+    }
+
+    .cdesign {
+      font: 20px;
+    }
+
+    .cdesign input {
+      width: 10%;
+      border: 10px;
+      border-radius: 4px;
+      border: 1px solid black;
+      margin: 14px;
+      font-size: 15px;
+    }
+
+    .button {
+      /* border-radius: 10px;
+        border: 2px solid black;  */
+      width: auto;
+      height: auto;
+      font-size: 15px;
+      margin: 22px 22px;
+    }
+  </style>
+
+  <body>
+    <h1>Basic Convertor</h1>
+
+    <!-- <div class="cdesign" id="meter">
+    Meter: <input type="text" class="meter" placeholder="meter"> 
+</div>
+
+<div class="cdesign" id="cmeter"> 
+    Centimeter: <input type="text" name="cmeter" placeholder="centimeter" oninput="lengthConverter(this.value)" onchange="lengthConverter(this.value)">
+</div> -->
+
+    <input type="text" name="input" id="input1" />
+
+    <button class="button" type="submit" value="submit" onclick="mToCm()">
+      Meter to Centimeter
+    </button>
+
+    <button class="button" type="submit" value="submit" onclick="cToM()">
+      Centimeter to Meter
+    </button>
+  </body>
+
+  <script>
+    function mToCm() {
+      var sd = document.getElementById("input1").value * 100;
+
+      document.getElementById("input1").value = sd;
+    }
+    function cToM() {
+      var sd = document.getElementById("input1").value / 100;
+
+      document.getElementById("input1").value = sd;
+    }
+  </script>
+</html>
